@@ -9,9 +9,14 @@ from sqlalchemy.ext.asyncio import create_async_engine
 from contextlib import asynccontextmanager
 import os
 from fastapi.staticfiles import StaticFiles
+from app.core.logger import setup_logger
+from loguru import logger
+from app.modules.chat.ws import router as chat_ws_router
+import sys
 
+setup_logger()
 
-
+logger.info("app started")
 async def create_tables():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
@@ -40,6 +45,7 @@ app.include_router(router)
 app.add_middleware(AuthMiddleware)
 app.include_router(chat_router)
 app.include_router(user_router)
+app.include_router(chat_ws_router)
 
 
 

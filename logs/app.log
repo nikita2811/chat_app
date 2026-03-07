@@ -1,0 +1,86 @@
+2026-03-06 19:34:13 | INFO | app.main:18 | app started
+2026-03-06 19:36:43 | INFO | app.main:18 | app started
+2026-03-06 19:41:53 | INFO | app.main:18 | app started
+2026-03-06 19:44:32 | INFO | app.main:18 | app started
+2026-03-06 19:45:04 | INFO | app.main:18 | app started
+2026-03-06 19:46:21 | INFO | app.main:18 | app started
+2026-03-06 19:49:38 | INFO | app.main:18 | app started
+2026-03-06 19:49:48 | INFO | app.main:18 | app started
+2026-03-06 19:50:21 | INFO | app.main:18 | app started
+2026-03-06 19:50:43 | INFO | app.main:18 | app started
+2026-03-06 19:51:22 | INFO | app.main:18 | app started
+2026-03-06 19:52:54 | INFO | app.main:18 | app started
+2026-03-06 19:59:05 | INFO | app.main:19 | app started
+2026-03-06 19:59:05 | INFO | app.modules.chat.ws:57 | token valid — user_id=7
+2026-03-06 19:59:05 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 19:59:05 | INFO | app.modules.chat.ws:57 | token valid — user_id=7
+2026-03-06 19:59:05 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 20:00:04 | INFO | app.modules.chat.ws:57 | token valid — user_id=7
+2026-03-06 20:00:04 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 20:00:14 | INFO | app.modules.chat.ws:57 | token valid — user_id=7
+2026-03-06 20:00:14 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 20:00:59 | ERROR | app.modules.chat.ws:48 | token expired
+2026-03-06 20:02:42 | ERROR | app.modules.chat.ws:48 | token expired
+2026-03-06 20:03:22 | INFO | app.modules.chat.ws:57 | token valid — user_id=7
+2026-03-06 20:03:22 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 20:03:49 | INFO | app.modules.chat.ws:57 | token valid — user_id=7
+2026-03-06 20:03:49 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 20:07:39 | INFO | app.main:19 | app started
+2026-03-06 20:07:40 | INFO | app.modules.chat.ws:74 | token valid — user_id=7
+2026-03-06 20:07:40 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 20:08:46 | INFO | app.main:19 | app started
+2026-03-06 20:08:46 | INFO | app.modules.chat.ws:75 | token valid — user_id=7
+2026-03-06 20:08:46 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 20:08:46 | INFO | app.modules.chat.ws:28 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 14:38:46.881488'}
+2026-03-06 20:09:18 | INFO | app.modules.chat.ws:28 | {'type': 'system', 'content': 'nikita left the room', 'timestamp': '2026-03-06 14:39:18.911797'}
+2026-03-06 20:09:24 | INFO | app.main:19 | app started
+2026-03-06 20:09:37 | INFO | app.modules.chat.ws:75 | token valid — user_id=7
+2026-03-06 20:09:37 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 20:09:37 | INFO | app.modules.chat.ws:28 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 14:39:37.571229'}
+2026-03-06 20:09:59 | INFO | app.modules.chat.ws:28 | {'type': 'system', 'content': 'nikita left the room', 'timestamp': '2026-03-06 14:39:59.537482'}
+2026-03-06 20:10:03 | INFO | app.main:19 | app started
+2026-03-06 20:10:04 | INFO | app.modules.chat.ws:75 | token valid — user_id=7
+2026-03-06 20:10:04 | INFO | app.modules.chat.ws:18 | user connected to conversation 2
+2026-03-06 20:10:04 | INFO | app.modules.chat.ws:28 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 14:40:04.148681'}
+2026-03-06 20:24:30 | INFO | app.modules.chat.ws:28 | {'type': 'system', 'content': 'nikita left the room', 'timestamp': '2026-03-06 14:54:30.278608'}
+2026-03-06 20:24:37 | INFO | app.main:19 | app started
+2026-03-06 20:25:29 | INFO | app.main:19 | app started
+2026-03-06 20:28:35 | INFO | app.main:19 | app started
+2026-03-06 20:28:36 | ERROR | app.modules.chat.ws:67 | token expired
+2026-03-06 20:29:13 | INFO | app.modules.chat.ws:76 | token valid — user_id=7
+2026-03-06 20:29:13 | INFO | app.modules.chat.ws:19 | user connected to conversation 2
+2026-03-06 20:29:13 | INFO | app.modules.chat.ws:29 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 14:59:13.280507'}
+2026-03-06 20:31:00 | INFO | app.modules.chat.ws:76 | token valid — user_id=7
+2026-03-06 20:31:00 | INFO | app.modules.chat.ws:19 | user connected to conversation 2
+2026-03-06 20:31:00 | INFO | app.modules.chat.ws:29 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 15:01:00.546970'}
+2026-03-06 20:31:00 | WARNING | app.modules.chat.ws:37 | dead websocket in room 2 — removing
+2026-03-06 20:31:54 | INFO | app.main:19 | app started
+2026-03-06 20:31:54 | INFO | app.modules.chat.ws:76 | token valid — user_id=7
+2026-03-06 20:31:54 | INFO | app.modules.chat.ws:19 | user connected to conversation 2
+2026-03-06 20:31:54 | INFO | app.modules.chat.ws:29 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 15:01:54.704179'}
+2026-03-06 20:32:27 | INFO | app.main:19 | app started
+2026-03-06 20:32:27 | INFO | app.modules.chat.ws:76 | token valid — user_id=7
+2026-03-06 20:32:27 | INFO | app.modules.chat.ws:19 | user connected to conversation 2
+2026-03-06 20:32:27 | INFO | app.modules.chat.ws:29 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 15:02:27.667547'}
+2026-03-06 20:33:09 | INFO | app.main:19 | app started
+2026-03-06 20:33:09 | INFO | app.modules.chat.ws:76 | token valid — user_id=7
+2026-03-06 20:33:09 | INFO | app.modules.chat.ws:19 | user connected to conversation 2
+2026-03-06 20:33:09 | INFO | app.modules.chat.ws:29 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 15:03:09.260620'}
+2026-03-06 20:34:28 | INFO | app.main:19 | app started
+2026-03-06 20:34:29 | INFO | app.modules.chat.ws:76 | token valid — user_id=7
+2026-03-06 20:34:29 | INFO | app.modules.chat.ws:19 | user connected to conversation 2
+2026-03-06 20:34:29 | INFO | app.modules.chat.ws:29 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 15:04:29.677516'}
+2026-03-06 20:35:16 | INFO | app.main:19 | app started
+2026-03-06 20:35:17 | INFO | app.modules.chat.ws:76 | token valid — user_id=7
+2026-03-06 20:35:17 | INFO | app.modules.chat.ws:19 | user connected to conversation 2
+2026-03-06 20:35:17 | INFO | app.modules.chat.ws:29 | {'type': 'system', 'content': 'nikita joined the room', 'timestamp': '2026-03-06 15:05:17.037897'}
+2026-03-06 20:35:18 | INFO | app.modules.chat.ws:29 | {'type': 'text', 'id': 1, 'sender_id': 8, 'username': 'nikita', 'content': 'hello', 'timestamp': '2026-03-06 15:05:18.635629'}
+2026-03-06 20:35:28 | INFO | app.modules.chat.ws:29 | {'type': 'text', 'id': 2, 'sender_id': 8, 'username': 'nikita', 'content': 'hello', 'timestamp': '2026-03-06 15:05:28.627980'}
+2026-03-07 07:44:51 | INFO | app.modules.chat.ws:29 | {'type': 'system', 'content': 'nikita left the room', 'timestamp': '2026-03-07 02:14:51.530328'}
+2026-03-07 07:45:03 | INFO | app.main:19 | app started
+2026-03-07 07:45:07 | INFO | app.main:19 | app started
+2026-03-07 07:45:24 | INFO | app.main:19 | app started
+2026-03-07 07:47:27 | INFO | app.main:19 | app started
+2026-03-07 07:50:41 | INFO | app.main:19 | app started
+2026-03-07 07:51:16 | INFO | app.main:19 | app started
+2026-03-07 07:51:38 | INFO | app.main:19 | app started

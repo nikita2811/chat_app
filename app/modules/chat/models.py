@@ -25,7 +25,7 @@ class Conversation(Base):
                                 lazy="selectin",
                                 passive_deletes=True )
     
-    convo_messages=relationship("Message",back_populates="conversation",lazy="selectin")
+    convo_messages=relationship("Message",back_populates="conversations",lazy="selectin")
     attachment= relationship("FileAttachment",back_populates="conversation",lazy="selectin")
 
 
@@ -57,5 +57,5 @@ class FileAttachment(Base):
 
     messages=relationship("Message",back_populates="file_attachment",lazy="selectin")
     conversation=relationship("Conversation",back_populates="attachment",lazy="selectin")
-    sender = relationship("User",back_populates="attachment",lazy="selectin")
+    sender = relationship("User",back_populates="attachments",lazy="selectin")
     

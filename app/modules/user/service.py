@@ -2,5 +2,7 @@ class UserService:
     def __init__(self,repo):
         self.repo = repo
 
-    async def get_user(self,user_id):
-      return await self.repo.get_user(user_id)
+    
+    
+    async def recommendations(self,current_user):
+       return await self.repo.recommendations(current_user)

@@ -46,7 +46,7 @@ async def delete_conversation(conversation_id:int,current_user=Depends(get_curre
 async def upload_file(conversation_id:int,
                       current_user=Depends(get_current_user),
                       service:ChatService=Depends(get_chat_service),
-                      files:list[UploadFile]=File(...)):
+                      files:UploadFile=File(...)):
      return await service.upload_file(conversation_id,current_user,files)
 
 async def download_stream(filename:str,

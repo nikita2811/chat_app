@@ -119,7 +119,7 @@ class ChatRepository:
           "message":messages
        }
     
-    async def upload_file(self,conversation_id,current_user,results,file_urls):
+    async def upload_file(self,conversation_id,current_user,file_name,file_url,file_type):
       message = Message(
          sender_id=current_user.id,
          conversation_id=conversation_id,
@@ -129,18 +129,26 @@ class ChatRepository:
       await self.db.commit()              # save to DB
       await self.db.refresh(message)
 
-      for file in results:
+      
 
-       file_attachment=FileAttachment(
+      file_attachment=FileAttachment(
          sender_id=current_user.id,
          conversation_id=conversation_id,
          message_id=message.id,
-         file_name=file
-         file_type =           # image, video, ocument
-         file_url =
-         created_at =
-
+         file_name=file_name,
+         file_type = file_type,       # image, video, ocument
+         file_url =file_url
       )
+      self.db.add(file_attachment)
+      await self.db.commit()
+      await self.db.refresh(file_attachment)
+
+      return {
+         "filename":file_name,
+         "file_url":file_url
+      }
+       
+
 
        
        

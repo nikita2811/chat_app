@@ -35,19 +35,19 @@ class ChatService:
     async def delete_conversation(self,conversation_id,user_id):
         return await self.repo.delete_conversation(conversation_id,user_id)
     
-    async def upload_file(self,conversation_id,current_user,files):
-            results=[]
-            file_urls=[]
-            for file in files:
-                ext = os.path.splitext(file.filename)[1]        # get extension e.g. .png
-                unique_name = f"{uuid.uuid4()}{ext}"            # random unique filename
-                file_path = f"uploads/{unique_name}"
-                async with aiofiles.open(file_path,"wb") as out_file:
-                    while chunk:=await file.read(1024*1024):
-                        await out_file.write(chunk)
-                        results.append(file.filename)
-                        file_urls.append(f"/uploads/{unique_name}")
-            return await self.repo.upload_file(conversation_id,current_user,results,file_urls)
+    async def upload_file(self,conversation_id,current_user,file):
+            file_name =""
+            file_url=""
+            file_type=file.content_type
+            ext = os.path.splitext(file.filename)[1]        # get extension e.g. .png
+            unique_name = f"{uuid.uuid4()}{ext}"            # random unique filename
+            file_path = f"uploads/{unique_name}"
+            async with aiofiles.open(file_path,"wb") as out_file:
+                while chunk:=await file.read(1024*1024):
+                    await out_file.write(chunk)
+                    file_name =file.filename
+                    file_url = f"/uploads/{unique_name}"
+            return await self.repo.upload_file(conversation_id,current_user,file_name,file_url,file_type)
     
     async def download_file(self,filename):
         async def file_generator():
