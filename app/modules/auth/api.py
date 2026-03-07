@@ -2,19 +2,24 @@ from fastapi import APIRouter,Depends,BackgroundTasks,Request,Response,HTTPExcep
 from .schemas import UserCreate,UserAuth,ForgotPassword,Resetpassword
 from .service import AuthService
 from .deps import get_auth_service
+from slowapi import Limiter
+from slowapi.util import get_remote_address
+from fastapi import Request
 
 
 router = APIRouter(
     prefix="/auth",
     tags=["Auth"]
 )
+limiter = Limiter(key_func=get_remote_address)
 
 @router.post("/register")
 async def create_user(user:UserCreate,bg:BackgroundTasks,service:AuthService = Depends(get_auth_service)):
     return await service.create_user(user,bg)
 
 @router.post("/login")
-async def authenticate_user(data:UserAuth,response:Response,service:AuthService=Depends(get_auth_service)):
+@limiter.limit("5/minute")
+async def authenticate_user(request: Request,data:UserAuth,response:Response,service:AuthService=Depends(get_auth_service)):
     return await service.authenticate_user(data,response)
 
 @router.get("/verify-email")

@@ -13,8 +13,13 @@ from app.core.logger import setup_logger
 from loguru import logger
 from app.modules.chat.ws import router as chat_ws_router
 import sys
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
+from slowapi.middleware import SlowAPIMiddleware
 
 setup_logger()
+
 
 logger.info("app started")
 async def create_tables():
@@ -33,6 +38,16 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title = "Chat App",lifespan=lifespan)
+
+app.add_middleware(SlowAPIMiddleware)
+limiter = Limiter(
+    key_func=get_remote_address,
+    default_limits=["10/minute"]   # global limit
+)
+app.state.limiter = limiter
+
+# handle rate limit exceeded error
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 
 
